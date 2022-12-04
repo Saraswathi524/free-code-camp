@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Building a Survey Form</p>
+      <form method="post" id="survey-form">
+        <label id="name-label">Enter your name: <input placeholder="Steve Harvey" type="text" id="name" required></label><br>
+        <label id="email-label">Enter your email: <input placeholder="steveharvey@gmail.com" type="email" id="email" required></label><br>
+        <label id="number-label">Enter your age: <input placeholder="Any number" type="number" id="number" min=13 max=120 required></label>
+        <label>how did you hear about us?:
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select><br></label>
+          <input type="radio" value="1" name="account-type"> personal account
+          <input type="radio" value="2" name="account-type"> Business account<br>
+          <input type="checkbox" value="1"> done with survey</input>
+          <input type="checkbox" value="2"> not done with survey</input><br>
+          <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea><br></label>
+        <input id="submit" type="submit" value="Submit" />
+        </form>
+      </body>
+  </html>
